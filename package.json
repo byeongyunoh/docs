@@ -22,6 +22,11 @@
   "homepage": "https://github.com/byeongyunoh/docs#readme",
   "dependencies": {
     "@vuepress/plugin-last-updated": "^1.5.0",
-    "vuepress": "^1.5.0"
+    "mermaid": "^8.5.1",
+    "vue-cute-timeline": "^1.2.8",
+    "vuepress": "^1.5.0",
+    "vuepress-plugin-container": "^2.1.3",
+    "vuepress-plugin-live": "^1.5.3",
+    "vuepress-theme-cool": "^1.3.0"
   }
 }
