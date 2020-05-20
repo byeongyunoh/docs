@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = {
     title: 'Test',
     description: 'build',
@@ -22,7 +24,15 @@ module.exports = {
     },
     plugins: [
         'live',
-        '@vuepress/plugin-last-updated',
+        [
+            '@vuepress/plugin-last-updated',
+            {
+                transformer: (timestamp, lang) => {
+                    moment.locale(lang);
+                    return moment(timestamp).fromNow();
+                }
+            }
+        ],
         '@vuepress/plugin-nprogress',
         [
             'vuepress-plugin-container',
