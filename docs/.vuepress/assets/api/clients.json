@@ -1,0 +1,20 @@
+
+{
+    "global": {
+        "headers": [
+
+        ]
+    },
+    "api": [{
+        "title": "CLIENT",
+        "description": "Wormhole 클라이언트를 위한 API",
+        "apis": [
+            {
+                "url": "http://localhost/clients",
+                "headers": {
+
+                }
+            }
+        ]
+    }]
+}

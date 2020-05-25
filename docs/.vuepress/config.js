@@ -2,6 +2,19 @@ module.exports = {
     title: 'byeongyun.oh',
     description: 'Tech logs.',
     base: '/docs/',
+    cache: false,
+    extraWatchFiles: [
+        '**/*.md',
+    ],
+    head: [
+        [
+            "link",
+            {
+                rel: "stylesheet",
+                href: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/ascetic.min.css"
+            }
+        ]
+    ],
     themeConfig: {
         locales: {
             '/': {
@@ -61,9 +74,6 @@ module.exports = {
         lineNumbers: true,
         extendMarkdown: md => {
             md.set({ html: true });
-            md.use(require('markdown-it-katex'));
-            md.use(require('markdown-it-plantuml'));
-            md.use(require('markdown-it-admonition'));
             md.use(require('markdown-it-footnote'));
         },
     },
